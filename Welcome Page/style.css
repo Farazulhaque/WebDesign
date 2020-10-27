@@ -1,0 +1,46 @@
+* {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #f5f5f6;
+}
+
+.child {
+  width: 400px;
+  height: 330px;
+  background-color: white;
+  border: 1px solid #d2d2d2;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+input {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.begin {
+  border: none;
+  color: white;
+  background-color: #ff8f00;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.begin:hover {
+  background-color: #f57c00;
+  cursor: pointer;
+}
