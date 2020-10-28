@@ -1,0 +1,66 @@
+/* Style body and text */
+body {
+  background-color: #3598dc;
+  font-family: arial;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: #f2f2f2;
+}
+
+/* Style the submit button */
+#sub {
+  background-color: #007bff;
+  color: white;
+}
+
+#sub:hover {
+  background-color: #0062cc;
+}
+
+/* Style the container for inputs */
+.container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* The message box is shown only when the user clicks on the password field */
+#message {
+  display: none;
+  width: 300px;
+  margin: 0 auto;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 16px;
+}
+
+/* Add a green text color when the requirements are right */
+.valid {
+  color: #009b6c;
+}
+
+/* Add a red text color when the requirements are wrong */
+.invalid {
+  color: #d9002f;
+}

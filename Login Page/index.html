@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="loginform" id="loginform">
+            <h2 class="text-center">Log in</h2>
+            <p>Username:<br>
+                <input type="text" id="usr" name="usr" placeholder="Enter Username" required></p>
+            <p>Password:<br>
+                <input type="password" id="psw" name="psw" placeholder="Enter Password"
+                    title="Must contain at least one number, one special character, one uppercase and lowercase letter, and at least 16 total characters"
+                    required>
+            </p>
+            <input type="submit" id="sub" name="sub" value="Sign in">
+        </form>
+    </div>
+    <div id="message">
+        <h3>Password Rules:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="special" class="invalid">A <b>special character</b> _!$^
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
