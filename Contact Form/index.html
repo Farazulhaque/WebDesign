@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    hr {
+        border-color: rgba(187, 185, 185, 0.356);
+        border-style: dashed;
+    }
+</style>
+
+<body>
+    <form action="/action.php" method="get">
+        <label for="firstname">First Name: </label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+        <hr>
+
+        <label for="middlename">Middle Name: </label><br>
+        <input type="text" id="middlename" name="middlename"><br>
+        <hr>
+
+        <label for="lastname">Last Name: </label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        <hr>
+
+        <label for="gender">Gender: </label><br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
+        <hr>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email"><br>
+        <hr>
+
+        <label for="phone">Phone Number: </label>
+        <input type="tel" name="phone" maxlength="10"><br>
+        <hr>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <hr>
+
+        <label for="address">Address: </label><br>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea><br>
+        <hr>
+
+        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+        <label for="newsletter"> Tick to receive the newsletter</label><br>
+
+        <hr>
+        <hr>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
