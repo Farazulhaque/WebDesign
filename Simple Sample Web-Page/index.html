@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chegg Question</title>
+    <meta charset="UTF-8">
+</head>
+<style>
+    table {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    p {
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <img src="a.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 500; vertical-align: top;">
+                <img src="b.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et libero justo. Maecenas tincidunt
+                    ultricies tellus. Praesent nec dignissim erat, quis semper nibh. Morbi mollis lobortis est.
+                </p>
+            </td>
+            <td style="width: 200; vertical-align: top;">
+                <h4>LATEST PROMOTIONS</h4>
+                <ol style="list-style-type: upper-roman;">
+                    <li>Home Appliances</li>
+                    <li>Kitchen Appliances</li>
+                    <li>Perfumes</li>
+                </ol>
+                <h3>SUBSCRIPTION FORM</h3>
+                Customer Name <input type="text" id="name"><br>
+                Message <textarea rows="5" cols="35"></textarea>
+                <button type="submit" onclick="validate()">Submit</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <hr>
+                <i>&copy;ITSE-web technologies</i>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function validate() {
+        var x = document.getElementById("name").value;
+        if (x == "") {
+            alert("Please Enter the Name");
+            return false;
+        }
+    }
+</script>
+
+</html>
