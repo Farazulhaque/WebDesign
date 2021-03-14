@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invoice</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h3>Remote Meeting Kit Invoice</h3>
+    <form>
+        <table id="mytab1">
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="item" id="items1">
+                        <option value="0.00">Select Item</option>
+                        <option value="45.00">USB Mouse at $45.00</option>
+                        <option value="95.00">USB Keyboard at $95.00</option>
+                        <option value="235.00">27" Monitor at $235.00</option>
+                        <option value="129.00">HD WebCam at $129.00</option>
+                        <option value="25.00">HD Microphone at $25.00</option>
+                        <option value="189.00">HD Headset at $189.00</option>
+                    </select>
+                </td>
+                <td><input type="number" id="quantity1" value=0></td>
+                <td><input type="number" id="output1"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="item" id="items2">
+                        <option value="0.00">Select Item</option>
+                        <option value="45.00">USB Mouse at $45.00</option>
+                        <option value="95.00">USB Keyboard at $95.00</option>
+                        <option value="235.00">27" Monitor at $235.00</option>
+                        <option value="129.00">HD WebCam at $129.00</option>
+                        <option value="25.00">HD Microphone at $25.00</option>
+                        <option value="189.00">HD Headset at $189.00</option>
+                    </select>
+                </td>
+                <td><input type="number" id="quantity2" value=0></td>
+                <td><input type="number" id="output2"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="item" id="items3">
+                        <option value="0.00">Select Item</option>
+                        <option value="45.00">USB Mouse at $45.00</option>
+                        <option value="95.00">USB Keyboard at $95.00</option>
+                        <option value="235.00">27" Monitor at $235.00</option>
+                        <option value="129.00">HD WebCam at $129.00</option>
+                        <option value="25.00">HD Microphone at $25.00</option>
+                        <option value="189.00">HD Headset at $189.00</option>
+                    </select>
+                </td>
+                <td><input type="number" id="quantity3" value=0></td>
+                <td><input type="number" id="output3"></td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="item" id="items4">
+                        <option value="0.00">Select Item</option>
+                        <option value="45.00">USB Mouse at $45.00</option>
+                        <option value="95.00">USB Keyboard at $95.00</option>
+                        <option value="235.00">27" Monitor at $235.00</option>
+                        <option value="129.00">HD WebCam at $129.00</option>
+                        <option value="25.00">HD Microphone at $25.00</option>
+                        <option value="189.00">HD Headset at $189.00</option>
+                    </select>
+                </td>
+                <td><input type="number" id="quantity4" value=0></td>
+                <td><input type="number" id="output4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Subtotal</td>
+                <td><input type="number" id="subtotal"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>PST</td>
+                <td><input type="number" id="pst"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>GST</td>
+                <td><input type="number" id="gst"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Total</td>
+                <td><input type="number" id="total"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="submit" onclick="calculate()">Calculate</button>
+                    <button type="reset">Clear Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+<script src="script.js"></script>
+</body>
+
+</html>
