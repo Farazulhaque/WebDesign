@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+LAB 1 PRACTICE FILE
+-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LAB 1 PRACTICE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            ORDER FORM
+        </h1>
+    </header>
+
+    <article>
+        <h2>Order Form</h2>
+        <form>
+            <fieldset id="contactinfo">
+                <legend><span>Contact Information</span></legend>
+                <label for="nameinput">
+                    Name
+                    <input type="text" id="nameinput" name="name" />
+                </label>
+                <label for="emailinput">
+                    Email
+                    <input type="email" id="emailinput" name="email" />
+                </label>
+                <label for="phoneinput">
+                    Phone
+                    <input type="text" id="phoneinput" name="phone" />
+                </label>
+            </fieldset>
+            <fieldset id="reserveinfo">
+                <legend><span>Reservation Information</span></legend>
+                <fieldset id="checkin">
+                    <legend>Pickup date</legend>
+                    <select id="inmonth" name="inmonth">
+                        <option value="01">January</option>
+                    </select>
+                    <select id="indate" name="indate">
+                        <option value="01">1</option>
+                    </select>
+                    <select id="inyear" name="inyear">
+                        <option value="2013">2013 </option>
+                    </select>
+                </fieldset>
+                <fieldset id="checkout">
+                    <legend>Dropoff date</legend>
+                    <select id="outmonth" name="outmonth">
+                        <option value="01">January</option>
+                    </select>
+                    <select id="outdate" name="outdate">
+                        <option value="01">1</option>
+
+                    </select>
+                    <select id="outyear" name="outyear">
+                        <option value="2013">2017</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+            <fieldset id="submitbutton">
+                <input type="button" value="Submit" onclick="myfunction()" />
+            </fieldset>
+        </form>
+
+        <p id="output"></p>
+    </article>
+</body>
+<script src="script.js"></script>
+
+</html>
