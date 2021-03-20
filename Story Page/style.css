@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #faf0e6;
+  width: 100%;
+}
+table {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  border: 1px solid black;
+}
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+td {
+  width: 150px;
+  height: 150px;
+}
+tr td {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+tr:nth-child(1) td:nth-child(1) {
+  background: url("images/1.png");
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+}
+tr:nth-child(1) td:nth-child(2) {
+  background: url("images/2.png");
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+}
+tr:nth-child(1) td:nth-child(3) {
+  background: url("images/3-8.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(2) td:nth-child(1) {
+  background: url("images/4-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(2) td:nth-child(2) {
+  background: url("images/4-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(2) td:nth-child(3) {
+  background: url("images/6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(3) td:nth-child(1) {
+  background: url("images/7.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(3) td:nth-child(2) {
+  background: url("images/3-8.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(3) td:nth-child(3) {
+  background: url("images/9.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(4) td:nth-child(1) {
+  background: url("images/10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+tr:nth-child(4) td:nth-child(2) {
+  background: url("images/11.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+tr:nth-child(4) td:nth-child(3) {
+  background: url("images/12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+p {
+  background-color: #fff;
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 1px;
+  margin: 0;
+}
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(2) td:nth-child(3),
+tr:nth-child(4) td:nth-child(2) {
+  text-align: center;
+}
