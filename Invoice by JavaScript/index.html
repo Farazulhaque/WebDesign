@@ -27,8 +27,8 @@
                         <option value="189.00">HD Headset at $189.00</option>
                     </select>
                 </td>
-                <td><input type="number" id="quantity1" value=0></td>
-                <td><input type="number" id="output1"> </td>
+                <td><input type="number" id="quantity1" value=0 min="0"></td>
+                <td><input type="number" id="output1" class="output" disabled></td>
             </tr>
             <tr>
                 <td>
@@ -42,8 +42,8 @@
                         <option value="189.00">HD Headset at $189.00</option>
                     </select>
                 </td>
-                <td><input type="number" id="quantity2" value=0></td>
-                <td><input type="number" id="output2"> </td>
+                <td><input type="number" id="quantity2" value=0 min="0"></td>
+                <td><input type="number" id="output2" class="output" disabled></td>
             </tr>
             <tr>
                 <td>
@@ -57,8 +57,8 @@
                         <option value="189.00">HD Headset at $189.00</option>
                     </select>
                 </td>
-                <td><input type="number" id="quantity3" value=0></td>
-                <td><input type="number" id="output3"></td>
+                <td><input type="number" id="quantity3" value=0 min="0"></td>
+                <td><input type="number" id="output3" class="output" disabled></td>
             </tr>
             <tr>
                 <td>
@@ -72,40 +72,40 @@
                         <option value="189.00">HD Headset at $189.00</option>
                     </select>
                 </td>
-                <td><input type="number" id="quantity4" value=0></td>
-                <td><input type="number" id="output4"></td>
+                <td><input type="number" id="quantity4" value=0 min="0"></td>
+                <td><input type="number" id="output4" class="output" disabled></td>
             </tr>
             <tr>
                 <td></td>
                 <td>Subtotal</td>
-                <td><input type="number" id="subtotal"></td>
+                <td><input type="number" id="subtotal" class="output" disabled></td>
             </tr>
             <tr>
                 <td></td>
                 <td>PST</td>
-                <td><input type="number" id="pst"></td>
+                <td><input type="number" id="pst" class="output" disabled></td>
             </tr>
             <tr>
                 <td></td>
                 <td>GST</td>
-                <td><input type="number" id="gst"></td>
+                <td><input type="number" id="gst" class="output" disabled></td>
             </tr>
             <tr>
                 <td></td>
                 <td>Total</td>
-                <td><input type="number" id="total"></td>
+                <td><input type="number" id="total" class="output" disabled></td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td>
-                    <button type="submit" onclick="calculate()">Calculate</button>
+                    <button type="button" onclick="calculate()">Calculate</button>
                     <button type="reset">Clear Form</button>
                 </td>
             </tr>
         </table>
     </form>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
