@@ -1,0 +1,53 @@
+body {
+  border: 1 px solid black;
+  padding: 30px;
+  margin: 40px;
+}
+
+div {
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 44px;
+  text-align: center;
+  color: blue;
+}
+
+input {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.operator {
+  margin-bottom: 10px;
+  margin-left: 100px;
+  width: 40px;
+  height: 30px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid grey;
+  margin-left: 30px;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(170, 168, 168);
+}
+
+hr {
+  border: 1px solid gray;
+}
+
+section {
+  padding-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 70vh;
+  background-color: rgb(184, 181, 181);
+  border: 1px solid black;
+}

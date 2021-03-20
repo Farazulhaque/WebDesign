@@ -4,61 +4,7 @@
 <head>
     <title>Simple Calculator</title>
     <meta charset="UTF-8">
-    <style>
-        body {
-            border: 1 px solid black;
-            padding: 30px;
-            margin: 40px;
-        }
-
-        div {
-            margin-left: 35%;
-            margin-right: 35%;
-            padding-bottom: 20px;
-            font-size: 30px;
-        }
-
-        h1 {
-            font-size: 44px;
-            text-align: center;
-            color: blue;
-        }
-
-        input {
-            width: 100px;
-            height: 20px;
-            margin-bottom: 10px;
-        }
-
-        .operator {
-            margin-bottom: 10px;
-            margin-left: 100px;
-            width: 40px;
-            height: 30px;
-        }
-
-        button {
-            cursor: pointer;
-            border: 1px solid grey;
-            margin-left: 30px;
-            width: 150px;
-            height: 30px;
-            background-color: rgb(170, 168, 168);
-        }
-
-        hr {
-            border: 1px solid gray;
-        }
-
-        section {
-            padding-top: 40px;
-            margin-left: 20%;
-            margin-right: 20%;
-            height: 70vh;
-            background-color: rgb(184, 181, 181);
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -80,7 +26,7 @@
                 <input name="value2" id="input2" type="text" />
                 <hr />
                 <label for="total">Total:</label>
-                <input name="total" id="total" />
+                <input name="total" id="total" disabled />
                 <br />
                 <button type="button" onclick="calculate()">Calculate Total</button>
                 <button type="reset">Clear</button>
@@ -88,33 +34,7 @@
         </div>
     </section>
 </body>
-<script>
-    function calculate() {
-        var operator = document.getElementById("operator").value;
-        a = parseInt(document.getElementById("input1").value);
-        b = parseInt(document.getElementById("input2").value);
-        switch (operator) {
-            case "+":
-                total = a + b;
-                document.getElementById("total").value = total;
-                break;
-            case "-":
-                total = a - b;
-                document.getElementById("total").value = total;
-                break;
-            case "*":
-                total = a * b;
-                document.getElementById("total").value = total;
-                break;
-            case "/":
-                total = a / b;
-                document.getElementById("total").value = total;
-                break;
-            default:
-                total = "Invalid Input";
-                document.getElementById("total").value = total;
-        }
-    }
-</script>
+
+<script src="script.js"></script>
 
 </html>
