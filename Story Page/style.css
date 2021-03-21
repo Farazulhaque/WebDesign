@@ -27,79 +27,78 @@ tr td {
 }
 
 tr:nth-child(1) td:nth-child(1) {
-  background: url("images/1.png");
+  background: url("images/1.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: 150px auto;
 }
 tr:nth-child(1) td:nth-child(2) {
-  background: url("images/2.png");
+  background: url("images/2.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: 150px auto;
 }
 tr:nth-child(1) td:nth-child(3) {
-  background: url("images/3-8.png");
+  background: url("images/3-8.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(2) td:nth-child(1) {
-  background: url("images/4-5.png");
+  background: url("images/4-5.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(2) td:nth-child(2) {
-  background: url("images/4-5.png");
+  background: url("images/4-5.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(2) td:nth-child(3) {
-  background: url("images/6.png");
+  background: url("images/6.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(3) td:nth-child(1) {
-  background: url("images/7.png");
+  background: url("images/7.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(3) td:nth-child(2) {
-  background: url("images/3-8.png");
+  background: url("images/3-8.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(3) td:nth-child(3) {
-  background: url("images/9.png");
+  background: url("images/9.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(4) td:nth-child(1) {
-  background: url("images/10.png");
+  background: url("images/10.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 }
 tr:nth-child(4) td:nth-child(2) {
-  background: url("images/11.png");
+  background: url("images/11.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 tr:nth-child(4) td:nth-child(3) {
-  background: url("images/12.png");
+  background: url("images/12.png") #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 }
 p {
-  background-color: #fff;
+  background-color: #f6f6f6;
   font-size: 12px;
-  border: 1px solid black;
   padding: 1px;
   margin: 0;
 }
@@ -109,4 +108,23 @@ tr:nth-child(2) td:nth-child(2),
 tr:nth-child(2) td:nth-child(3),
 tr:nth-child(4) td:nth-child(2) {
   text-align: center;
+}
+tr:nth-child(1) td:nth-child(1) p:nth-child(1),
+tr:nth-child(1) td:nth-child(3) p:nth-child(1),
+tr:nth-child(3) td:nth-child(1) p:nth-child(1),
+tr:nth-child(3) td:nth-child(2) p:nth-child(1),
+tr:nth-child(3) td:nth-child(3) p:nth-child(1),
+tr:nth-child(4) td:nth-child(1) p:nth-child(1),
+tr:nth-child(4) td:nth-child(3) p:nth-child(1) {
+  display: inline;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+tr:nth-child(1) td:nth-child(2) p:nth-child(1),
+tr:nth-child(2) td:nth-child(1) p:nth-child(1),
+tr:nth-child(2) td:nth-child(2) p:nth-child(1),
+tr:nth-child(2) td:nth-child(3) p:nth-child(1),
+tr:nth-child(3) td:nth-child(1) p:nth-child(1),
+tr:nth-child(4) td:nth-child(2) p:nth-child(1) {
+  border-top: 1px solid black;
 }
