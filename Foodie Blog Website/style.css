@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f9c566;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+main {
+  width: 70%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  height: 114vh;
+  border: 1px solid black;
+  padding: 1% auto 1% auto;
+}
+h1 {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 400;
+  color: gray;
+}
+nav,
+footer {
+  width: 100%;
+  background-color: gray;
+  padding: 2px auto 2px 10px;
+  margin: 0;
+  height: 27px;
+  line-height: 2em;
+}
+.nav {
+  text-decoration: none;
+  color: white;
+  margin: 0 auto 2px 30px;
+  font-size: 20px;
+}
+.left {
+  width: 70%;
+  height: auto;
+  float: left;
+  background-color: #fff;
+  padding: 10px;
+  border-right: 2px dotted rgb(236, 231, 231);
+}
+.right {
+  margin-left: 70%;
+  height: 88vh;
+  background-color: #fff;
+  padding: 20px;
+  padding-left: 30px;
+}
+h2 {
+  color: #953f4d;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 3%;
+  text-shadow: 2px 2px 2px rgb(207, 203, 203);
+}
+img {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dotted rgb(199, 196, 196);
+  padding: 5px;
+}
+.inner-div {
+  margin-top: 20px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 5%;
+}
+.left-left {
+  width: 45%;
+  float: left;
+  padding: 5px;
+  height: auto;
+  border: 1px dotted gray;
+  border-radius: 10px;
+  height: 240px;
+}
+.left-right {
+  margin-left: 50%;
+  width: 45%;
+  height: auto;
+  padding: 5px;
+  border: 1px dotted gray;
+  border-radius: 10px;
+  height: 240px;
+}
+.h3-left {
+  text-align: center;
+  color: #953f4d;
+}
+ul,
+ol {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.link {
+  color: brown;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.h3-right {
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  padding-left: 5px;
+}
+.ul-right {
+  list-style-type: none;
+}
+.ul-right li {
+  color: #953f4d;
+  font-weight: 550;
+  line-height: 2.2em;
+  border-bottom: 1px dotted gray;
+}
+.ul-right li:last-child {
+  margin-bottom: 20px;
+}
+.p-right {
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.fa-twitter {
+  border-radius: 50%;
+  background-color: #00acee;
+  padding: 5px;
+  margin: 2px;
+  line-height: 2em;
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.fa-instagram {
+  border-radius: 50%;
+  background-color: #bc2a8d;
+  padding: 5px;
+  margin: 2px;
+  line-height: 2em;
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.social {
+  text-decoration: none;
+  color: #953f4d;
+  font-weight: 550;
+  line-height: 2.2em;
+}
+
+footer {
+  text-align: center;
+  height: 27px;
+  border-bottom: 1px solid black;
+  line-height: 2em;
+}
