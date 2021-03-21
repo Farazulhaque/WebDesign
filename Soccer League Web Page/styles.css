@@ -1,0 +1,224 @@
+/* reset styles */
+html {
+  font-size: 14px;
+}
+article,
+aside,
+body,
+div,
+footer,
+header,
+h1,
+h2,
+h3,
+img,
+nav,
+p {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+ul li {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+/* body and page container */
+body {
+  background: green;
+  background: url("images/grass.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #c8f098;
+}
+p {
+  font-size: 1.2em;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+  position: absolute;
+  left: -10000px;
+}
+p.skipnavigation a:focus {
+  left: 1em;
+  top: 1em;
+  color: black;
+  background: ivory;
+  z-index: 2;
+}
+
+/* header section */
+header {
+  padding: 1em 2% 0.5em;
+  text-align: center;
+  background-color: rgb(140, 198, 63);
+  overflow: auto;
+}
+h1 {
+  width: 61%;
+  font-size: 2.4em;
+  line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+  float: right;
+}
+header div {
+  width: 33%;
+  float: left;
+}
+
+/* site navigation */
+nav.sitenavigation {
+  padding: 2%;
+  width: 25%;
+  position: absolute;
+  left: 0;
+}
+nav li {
+  font-size: 1.2em;
+}
+nav.sitenavigation a {
+  margin-bottom: 0.6em;
+  padding: 0.2em;
+  display: block;
+  background-color: #c8f098;
+  font-weight: bold;
+}
+nav.sitenavigation a:link {
+  color: black;
+  text-decoration: none;
+}
+nav.sitenavigation a:visited {
+  color: #888;
+}
+nav.sitenavigation a:hover,
+nav.sitenavigation a:focus {
+  color: black;
+  background-color: white;
+}
+nav.sitenavigation a:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+/* main content */
+article {
+  padding: 1em 3%;
+  width: 65%;
+  position: relative;
+  left: 29%;
+  background-color: white;
+}
+article h2 {
+  margin: 0 0 0.4em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.6em;
+}
+article h3 {
+  margin: 0 0 0.6em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+}
+article p {
+  margin: 0 0 1em 1em;
+  padding-left: 7%;
+}
+/* main content tables */
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+th {
+  background-color: #ddd;
+}
+.red-team-schedule {
+  border: 5px solid red;
+}
+.red-team-schedule th {
+  border-bottom: 5px solid red;
+}
+.blue-team-schedule {
+  border: 5px solid blue;
+}
+.blue-team-schedule th {
+  border-bottom: 5px solid blue;
+  color: blue;
+}
+.green-team-schedule {
+  border: 5px solid green;
+}
+.green-team-schedule th {
+  border-bottom: 5px solid green;
+  color: green;
+}
+.yellow-team-schedule {
+  border: 5px solid #e6da57;
+}
+.yellow-team-schedule th {
+  border-bottom: 5px solid #e6da57;
+  color: yellow;
+}
+
+/* main content unordered list */
+article ul {
+  margin: 0 0 1em 3em;
+  padding-left: 7%;
+  list-style-type: disc;
+  font-size: 1.2em;
+}
+/* footer section */
+footer {
+  padding: 0.5em;
+  clear: both;
+  color: white;
+  background-color: black;
+  text-align: right;
+}
+
+/* print styles */
+@media print {
+  article {
+    position: static;
+    margin: 0 auto;
+  }
+  aside,
+  body,
+  .container,
+  footer,
+  header {
+    color: #000;
+    background: #fff;
+  }
+  body {
+    max-width: 100%;
+  }
+  nav {
+    display: none;
+  }
+}
+@page {
+  margin: 0.75in;
+}
