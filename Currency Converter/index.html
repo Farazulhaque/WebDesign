@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            CURRENCY CONVERTER
+        </h1>
+    </header>
+
+    <article>
+        <h2>Convert Any Currency of Your Choice</h2>
+        <form>
+            <fieldset id="userinput">
+                <label for="amount">
+                    Amount
+                    <input type="number" id="amount" name="amount" />
+                </label>
+            </fieldset>
+            <fieldset id="currency">
+                <legend><span>Simple Currency Converter</span></legend>
+                <fieldset id="from">
+                    <legend>From</legend>
+                    <select id="fromcurrency" name="fromcurrency">
+                        <option value="01">Euro</option>
+                        <option value="02">Turkish Lira</option>
+                    </select>
+                </fieldset>
+                <fieldset id="to">
+                    <legend>To</legend>
+                    <select id="tocurrency" name="tocurrency">
+                        <option value="01">Euro</option>
+                        <option value="02" selected>Turkish Lira</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+            <fieldset id="submitbutton">
+                <input type="button" value="Convert" onclick="myfunction()" />
+            </fieldset>
+        </form>
+
+        <p id="output"></p>
+    </article>
+</body>
+<script src="script.js"></script>
+
+</html>
