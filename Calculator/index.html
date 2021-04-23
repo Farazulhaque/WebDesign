@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator 7</title>
+
+</head>
+
+<body>
+    <section class="calculator7">
+        <h1> Calculator 7 </h1>
+        <form>
+            <input type="text" name="" value="" id="result" class="screen7">
+        </form>
+        <div class="buttons7">
+            <!-- operation buttons -->
+            <button type="button" class="btn7 btn-mul" data-num="*" onclick="dis('*')">*</button>
+            <button type="button" class="btn7 btn-div" data-num="/" onclick="dis('/')">/</button>
+            <button type="button" class="btn7 btn-sub" data-num="-" onclick="dis('-')">-</button>
+            <button type="button" class="btn7 btn-add" data-num="+" onclick="dis('+')">+</button>
+            <!-- number buttons -->
+            <button type="button" class="btn7 btn-grey" data-num="." onclick="dis('.')">.</button>
+            <button type="button" class="btn7 btn-grey" data-num="9" onclick="dis('9')">9</button>
+            <button type="button" class="btn7 btn-grey" data-num="8" onclick="dis('8')">8</button>
+            <button type="button" class="btn7 btn-grey" data-num="7" onclick="dis('7')">7</button>
+            <button type="button" class="btn7 btn-grey" data-num="6" onclick="dis('6')">6</button>
+            <button type="button" class="btn7 btn-grey" data-num="5" onclick="dis('5')">5</button>
+            <button type="button" class="btn7 btn-grey" data-num="4" onclick="dis('4')">4</button>
+            <button type="button" class="btn7 btn-grey" data-num="3" onclick="dis('3')">3</button>
+            <button type="button" class="btn7 btn-grey" data-num="2" onclick="dis('2')">2</button>
+            <button type="button" class="btn7 btn-grey" data-num="1" onclick="dis('1')">1</button>
+            <button type="button" class="btn7 btn-grey" data-num="0" onclick="dis('0')">0</button>
+            <button type="button" class="btn7 btn-grey equal" onclick="solve()">=</button>
+            <button type="button" class="btn7 btn-grey mem">MS</button>
+            <button type="button" class="btn7 btn-grey mem">MC</button>
+            <button type="button" class="btn7 btn-grey mem">MR</button>
+            <button type="button" class="btn7 btn-grey clear" onclick="clr()">C</button>
+
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
