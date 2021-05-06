@@ -1,0 +1,46 @@
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+tbody > tr > :nth-child(1) {
+  width: 200px;
+}
+tbody > tr > :nth-child(3) {
+  width: 200px;
+}
+h3 {
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+.footer {
+  text-align: center;
+  line-height: 10px;
+}
+span {
+  color: red;
+}
+.sidenav {
+  width: 90%;
+  margin-left: 10%;
+  border-collapse: collapse;
+}
+.body {
+  text-align: justify;
+  padding: 5px;
+  vertical-align: top;
+}
+.body p {
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
