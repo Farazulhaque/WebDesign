@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    form {
+        width: 30%;
+    }
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Form Validation</legend>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" id="username"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>Re-type Password: </td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td><input type="radio" name="gender" value="male" />Male<input type="radio" name="gender"
+                            value="female" />Female<input type="radio" name="gender" value="other" />Other</td>
+                </tr>
+                <tr>
+                    <td>Programming skills: </td>
+                    <td><input type="checkbox">Java<input type="checkbox">Android<input type="checkbox">Ruby<input
+                            type="checkbox">.Net</td>
+                </tr>
+                <tr>
+                    <td>Contact no: </td>
+                    <td><input type="tel" id="contact" pattern="[0-9]{3} [0-9]{4} [0-9]{3}"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>College: </td>
+                    <td><select>
+                            <option>ABC</option>
+                            <option>XYZ</option>
+                            <option>PQR</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit" onclick="validate()"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+<script>
+    function validate() {
+        name = document.getElementById("name").value;
+        uname = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+        contact = document.getElementById("contact").value;
+        number = /^[0-9]+$/;
+        if (name == "")
+            alert("Name can not be empty");
+        else if (uname.indexOf(' ') >= 0)
+            alert("User name contain spaces")
+        else if (password.length < 8 || password.length > 32)
+            alert("Password length should be between 8-32")
+        else if (contact.match(number) == false) {
+            alert("Contact no should contain only numbers")
+        }
+    }
+</script>
+
+</html>
