@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOB Validation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form>
+        <br>
+        <label for="DOB">Date of Birth:* </label>
+        <input type="text" id="DOB" name="DOB" size="12">
+        <br>
+        Format: DD/MM/YYYY
+        <br>
+        <button onclick="validateDOB()">Check</button>
+    </form>
+</body>
+<script>
+    function validateDOB() {
+        var dob = document.getElementById("DOB").value;
+        var pattern = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
+        var data = dob.split("/");
+        // data[0] > 31 Date
+        // data[1] > 12 Month
+        // data[2] > 2021 Year
+        if (dob == null || dob == "" || !pattern.test(dob) || data[0] > 31 || data[1] > 12 || data[2] > 2021) {
+            alert("Invalid date of birth\n");
+        }
+        else {
+            alert("Valid date of birth\n");
+        }
+    }
+</script>
+
+</html>
