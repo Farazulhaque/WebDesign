@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    * {
+        margin: 0;
+    }
+
+    body {
+        padding: 2%;
+    }
+
+    table {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: #003263;
+        color: white;
+    }
+
+    td {
+        padding: 2px 0px 2px 5px;
+    }
+
+    tr> :not(:first-child) {
+        text-align: center;
+    }
+
+    tr:last-child {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>HTML <br> part</th>
+            <th>CSS <br> part</th>
+            <th>HTML <br> +CSS</th>
+            <th>Your Score</th>
+        </tr>
+        <tr>
+            <td>Doctype</td>
+            <td>2</td>
+            <td></td>
+            <td>2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>1</td>
+            <td></td>
+            <td>1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Centered layout</td>
+            <td></td>
+            <td>4</td>
+            <td>4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>body</td>
+            <td></td>
+            <td>4</td>
+            <td>4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>paragraph</td>
+            <td>2</td>
+            <td>4</td>
+            <td>5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>page_wrapper</td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>page_header</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>h1 inside page_header</td>
+            <td>1</td>
+            <td>7</td>
+            <td>8</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>h2 inside page_header</td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>left_side</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>h3 inside left_side</td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>right_side</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>anchor in right_side</td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ul in right_side</td>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>h3 in right_side</td>
+            <td>1</td>
+            <td>7</td>
+            <td>8</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>page_footer</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>h6 in page_footer</td>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"><strong>TOTAL</strong></td>
+            <td></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
