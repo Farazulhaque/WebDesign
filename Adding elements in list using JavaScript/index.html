@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Student</title>
+</head>
+<style>
+    span {
+        color: red;
+    }
+</style>
+
+<body>
+    <form>
+        <label for="fullName">
+            Enter Full Name:
+            <input type="text" id="fullName" />
+        </label>
+        <span id="fullName_msg"></span>
+        <br />
+
+        <label for="studentId">
+            Enter Student Id:
+            <input type="text" id="studentId" />
+        </label>
+        <span id="studentId_msg"></span>
+        <br />
+
+        <label for="problem">
+            Enter Problem:
+            <input type="text" id="problem" />
+        </label>
+        <span id="problem_msg"></span>
+        <br />
+
+        <input type="button" value="Add Student" onclick="addStudent()" />
+        <br /><br />
+    </form>
+    <h3>Students::</h3>
+    <ol id="studentList"></ol>
+
+</body>
+<script src="add.js"></script>
+
+</html>
