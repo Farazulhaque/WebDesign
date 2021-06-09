@@ -20,13 +20,9 @@ td {
 
 table,
 th,
-td:not(.ppt) {
+td {
   border: 1px solid black;
   border-collapse: collapse;
-}
-
-.none {
-  border-bottom: 1px solid black;
 }
 
 table tr:first-child {
@@ -34,7 +30,7 @@ table tr:first-child {
   font-size: 22px;
 }
 
-tbody > tr > :nth-child(4) {
+tbody>tr> :nth-child(4) {
   text-align: center;
 }
 
@@ -44,8 +40,11 @@ input {
 }
 
 input[type="text"] {
-  height: 20px;
+  height: 30px;
   width: 100px;
+  font-size: 20px;
+  color: black;
+  padding: 2px;
 }
 
 select {

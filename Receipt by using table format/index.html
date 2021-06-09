@@ -16,100 +16,89 @@
             <th>Cost ($)</th>
         </tr>
         <tr>
-            <td rowspan="4"><input type="checkbox">Item 1 ($)</td>
-            <td class="ppt"><input type="radio">Property 1 - price ($)</td>
-            <td rowspan="4"><select>
-                    <option>Units</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+            <td><input type="checkbox" id="item1">Item 1 ($)</td>
+            <td class="ppt">
+                <input type="radio" name="item1" id="i1p1" value="100">Property 1 - price ($)<br>
+                <input type="radio" name="item1" id="i1p2" value="200">Property 2 - price ($)<br>
+                <input type="radio" name="item1" id="i1p3" value="300">Property 3 - price ($)<br>
+                <input type="radio" name="item1" id="i1p4" value="0">None
+            </td>
+
+            <td><select id="u1" name="u1">
+                    <option value="0">Units</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select></td>
-            <td rowspan="4">
-                <input type="text" disabled>
+            <td>
+                <input type="text" id="i1total" disabled>
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" id="item2">Item 2 ($)</td>
+            <td class="ppt">
+                <input type="radio" name="item2" id="i2p1" value="100">Property 1 - price ($)<br>
+                <input type="radio" name="item2" id="i2p2" value="200">Property 2 - price ($)<br>
+                <input type="radio" name="item2" id="i2p3" value="200">Property 3 - price ($)<br>
+                <input type="radio" name="item2" id="i2p4" value="0">None
+            </td>
+
+            <td><select id="u2" name="u2">
+                    <option value="0">Units</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select></td>
+            <td>
+                <input type="text" id="i2total" disabled>
             </td>
         </tr>
         <tr>
-            <td class="ppt"><input type="radio">Property 2 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt"><input type="radio">Property 3 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt none"><input type="radio">None</td>
-        </tr>
-        <tr>
-            <td rowspan="4"><input type="checkbox">Item 2 ($)</td>
-            <td class="ppt"><input type="radio">Property 1 - price ($)</td>
-            <td rowspan="4"><select>
-                    <option>Units</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+            <td><input type="checkbox" id="item3">Item 3 ($)</td>
+            <td class="ppt">
+                <input type="radio" name="item3" id="i3p1" value="100">Property 1 - price ($)<br>
+                <input type="radio" name="item3" id="i3p2" value="200">Property 2 - price ($)<br>
+                <input type="radio" name="item3" id="i3p3" value="200">Property 3 - price ($)<br>
+                <input type="radio" name="item3" id="i3p4" value="0">None
+            </td>
+
+            <td><select id="u3" name="u3">
+                    <option value="0">Units</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select></td>
-            <td rowspan="4">
-                <input type="text" disabled>
+            <td>
+                <input type="text" id="i3total" disabled>
             </td>
         </tr>
         <tr>
-            <td class="ppt"><input type="radio">Property 2 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt"><input type="radio">Property 3 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt none"><input type="radio">None</td>
-        </tr>
-        <tr>
-            <td rowspan="4"><input type="checkbox">Item 3 ($)</td>
-            <td class="ppt"><input type="radio">Property 1 - price ($)</td>
-            <td rowspan="4"><select>
-                    <option>Units</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select></td>
-            <td rowspan="4">
-                <input type="text" disabled>
+            <td><input type="checkbox" id="item4">Item 4 ($)</td>
+            <td class="ppt">
+                <input type="radio" name="item4" id="i4p1" value="100">Property 1 - price ($)<br>
+                <input type="radio" name="item4" id="i4p2" value="200">Property 2 - price ($)<br>
+                <input type="radio" name="item4" id="i4p3" value="200">Property 3 - price ($)<br>
+                <input type="radio" name="item4" id="i4p4" value="0">None
             </td>
-        </tr>
-        <tr>
-            <td class="ppt"><input type="radio">Property 2 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt"><input type="radio">Property 3 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt none"><input type="radio">None</td>
-        </tr>
-        <tr>
-            <td rowspan="4"><input type="checkbox">Item 4 ($)</td>
-            <td class="ppt"><input type="radio">Property 1 - price ($)</td>
-            <td rowspan="4"><select>
-                    <option>Units</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+
+            <td><select id="u4" name="u4">
+                    <option value="0">Units</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select></td>
-            <td rowspan="4">
-                <input type="text" disabled>
+            <td>
+                <input type="text" id="i4total" disabled>
             </td>
-        </tr>
-        <tr>
-            <td class="ppt"><input type="radio">Property 2 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt"><input type="radio">Property 3 - price ($)</td>
-        </tr>
-        <tr>
-            <td class="ppt none"><input type="radio">None</td>
         </tr>
         <tr>
             <td colspan="2">Total Cost (After 15% discount)</td>
-            <td><button id="btn">Calculate</button></td>
+            <td><button id="btn" onclick="calculate()">Calculate</button></td>
             <td>
                 <p id="total">($) 0</p>
             </td>
