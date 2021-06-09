@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+  font-size: 44px;
+  font-family: Calibri;
+}
+
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 5px;
+}
+
+table,
+th,
+td:not(.ppt) {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.none {
+  border-bottom: 1px solid black;
+}
+
+table tr:first-child {
+  background-color: gray;
+  font-size: 22px;
+}
+
+tbody > tr > :nth-child(4) {
+  text-align: center;
+}
+
+input {
+  background-color: rgb(221, 217, 217);
+  border: none;
+}
+
+input[type="text"] {
+  height: 20px;
+  width: 100px;
+}
+
+select {
+  font-size: 18px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#btn {
+  cursor: pointer;
+  height: 35px;
+  width: 100px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+#btn:hover {
+  background-color: rgb(228, 224, 224);
+}
+
+#total {
+  text-align: center;
+}
