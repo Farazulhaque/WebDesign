@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row my-4">
+        <div class="col-9 text-right total">
+            Total
+        </div>
+
+        <div class="col-2 total-val">
+            <span id="total_value">0</span>
+        </div>
+    </div>
+
+    <h2 style="color:yellow;">MAIN COURSE ORDER SECTION</h2>
+    <table>
+        <tr>
+            <th> PRODUCT </th>
+            <th> PRICE </th>
+            <th> QUANTITY </th>
+        </tr>
+        <tr>
+            <td><img src="image/main1.png" width="500px"></td>
+            <td><input type="text" value="RM 19.99" id="price_main1" size="7" readonly></td>
+            <br>
+            <td><input type="number" value=0 id="qty_main1"></td></br>
+        </tr>
+        <tr>
+            <td>
+                <h2>SEAFOOD PAELLA</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main2.png" width="500px"></td>
+            <td><input type="text" value="RM 14.99" id="price_main2" size="7" readonly></td>
+            <td><input type="number" value=0 class="qty" id="qty_main2"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>SHAKSHUKA</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main3.png" width="500px"></td>
+            <td><input type="text" value="RM 14.99" id="price_main3" size="7" readonly></td>
+            <td><input type="number" value=0 id="qty_main3"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>CLAM SHOWDER</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main4.jpg" width="500px"></td>
+            <td><input type="text" value="RM 24.99" id="price_main4" size="7" readonly></td>
+            <td><input type="number" value=0 id="qty_main4"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>BOUILLABAISSE</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main5.jpg" width="500px"></td>
+            <td><input type="text" value="RM 24.99" id="price_main5" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main5"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>GOULASH</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main6.jpg" width="500px"></td>
+            <td><input type="text" value="RM 29.99" id="price_main6" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main6"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>BOEUF BOURGUIGNON</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main7.jpg" width="500px"></td>
+            <td><input type="text" value="RM 19.99" id="price_main7" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main7"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>POKE</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main8.jpg" width="500px"></td>
+            <td><input type="text" value="RM 9.99" id="price_main8" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main8"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>WIENER SCHNITZELR</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main9.jpg" width="500px"></td>
+            <td><input type="text" value="RM 10.99" id="price_main9" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main9"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>BIBIMBAP</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main10.jpg" width="500px"></td>
+            <td><input type="text" value="RM 20.60" id="price_main10" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main10"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>PAELLA</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/main11.jpg" width="500px"></td>
+            <td><input type="text" value="RM 8.60" id="price_main11" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_main11"></td>
+        </tr>
+    </table>
+    <br />
+    <h2 style="color:yellow;">BEVERAGE ORDER SECTION</h2>
+    <table>
+        <tr>
+            <th colspan="2"> PRODUCT </th>
+            <th> PRICE </th>
+            <th> QUANTITY </th>
+        </tr>
+        <tr>
+            <td colspan="2"><img src="image/drink1.jpg" width="500px"></td>
+            <td><input type="text" value="RM 5.00" id="price_drink1" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_drink1"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>PINK COCKTAIL</h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><img src="image/drink2.jpg" width="500px"></td>
+            <td><input type="text" value="RM 5.00" id="price_drink2" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_drink2"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>STRAWBERRY VANILLA COCKTAI</h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><img src="image/drink3.jpg" width="500px"></td>
+            <td><input type="text" value="RM 6.00" id="price_drink3" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_drink3"></td>
+        </tr>
+    </table>
+    <br />
+    <h2 style="color:yellow">DESSERT ORDER SECTION</h2>
+    <table>
+        <tr>
+            <th> PRODUCT </th>
+            <th> PRICE </th>
+            <th> QUANTITY </th>
+        </tr>
+        <tr>
+            <td>
+                <h2>DESSERT NAME</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="image/dessert1.png" width="500px"></td>
+            <td><input type="text" value="RM 9.99" id="price_dessert1" size="6" readonly></td>
+            <td><input type="number" value=0 id="qty_dessert1"></td>
+        </tr>
+    </table>
+    <input type="button" onclick="Calculate()" value="calculate">
+</body>
+<script>
+    function Calculate() {
+        var total = 0
+        for (var i = 1; i <= 11; i++) {
+            var x = "price_main" + i;
+            var y = "qty_main" + i;
+            var price = parseFloat(document.getElementById(x).value.replace('RM', ''));
+            var qty = document.getElementById(y).value;
+            total += price * qty;
+        }
+        for (var i = 1; i <= 3; i++) {
+            var x = "price_drink" + i;
+            var y = "qty_drink" + i;
+            var price = parseFloat(document.getElementById(x).value.replace('RM', ''));
+            var qty = document.getElementById(y).value;
+            total += price * qty;
+        }
+        for (var i = 1; i <= 2; i++) {
+            var x = "price_dessert" + i;
+            var y = "qty_dessert" + i;
+            var price = parseFloat(document.getElementById("price_dessert1").value.replace('RM', ''));
+            var qty = document.getElementById("qty_dessert1").value;
+            total += price * qty;
+        }
+        // console.log(total);
+        document.getElementById("total_value").innerHTML = "RM " + total.toFixed(2);
+    }
+</script>
+
+</html>
