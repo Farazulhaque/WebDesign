@@ -1,0 +1,26 @@
+body{
+    background-color: #2471A3;
+    font-family: Arial, Verdana, sans-serif;
+    margin-left: 20px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+#date{
+    color: yellow;
+}
+.qstnBlock{
+    margin: 10px;
+    padding: 5px;
+    background-color: #D0ECE7;
+    border-radius: 5px;
+}
+#name{
+    width: 50%;
+    height: 25px;
+}
+button{
+    width: 150px;
+    height: 30px;
+}
