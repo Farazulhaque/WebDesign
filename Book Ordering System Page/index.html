@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ordering System</title>
+    <link rel="stylesheet" href="book-order.css">
+</head>
+
+<body>
+    <h1>Book Ordering System</h1>
+    <table id="head">
+        <tr>
+            <th>No.</th>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <tr class="hover middle">
+            <td>1</td>
+            <td><input type="text"></td>
+            <td><input type="text" class="center"></td>
+            <td><select name="type">
+                    <option value="Choose" disabled>Choose a Category</option>
+                    <option value="Business">Business</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Technology">Technology</option>
+                </select></td>
+            <td><input type="number" name="unit price" id="book1_price" placeholder="0.00"></td>
+            <td><input type="number" name="Quantity" id="book1_quan" placeholder="0"></td>
+            <td><input type="number" name="total" id="book1_total" class="total" value="0.00" disabled></td>
+        </tr>
+        <tr class="hover middle">
+            <td>2</td>
+            <td><input type="text"></td>
+            <td><input type="text" class="center"></td>
+            <td><select name="type">
+                    <option value="Choose" disabled>Choose a Category</option>
+                    <option value="Business">Business</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Technology">Technology</option>
+                </select></td>
+            <td><input type="number" name="unit price" id="book2_price" placeholder="0.00"></td>
+            <td><input type="number" name="Quantity" id="book2_quan" placeholder="0"></td>
+            <td><input type="number" name="total" id="book2_total" class="total" value="0.00" disabled></td>
+        </tr>
+        <tr class="hover middle">
+            <td>3</td>
+            <td><input type="text"></td>
+            <td><input type="text" class="center"></td>
+            <td><select name="type">
+                    <option value="Choose" disabled>Choose a Category</option>
+                    <option value="Business">Business</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Technology">Technology</option>
+                </select></td>
+            <td><input type="number" name="unit price" id="book3_price" placeholder="0.00"></td>
+            <td><input type="number" name="Quantity" id="book3_quan" placeholder="0"></td>
+            <td><input type="number" name="total" id="book3_total" class="total" value="0.00" disabled></td>
+        </tr>
+        <tr class="hover middle">
+            <td>4</td>
+            <td><input type="text"></td>
+            <td><input type="text" class="center"></td>
+            <td><select name="type">
+                    <option value="Choose" disabled>Choose a Category</option>
+                    <option value="Business">Business</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Technology">Technology</option>
+                </select></td>
+            <td><input type="number" name="unit price" id="book4_price" placeholder="0.00"></td>
+            <td><input type="number" name="Quantity" id="book4_quan" placeholder="0"></td>
+            <td><input type="number" name="total" id="book4_total" class="total" value="0.00" disabled></td>
+        </tr>
+        <tr class="hover middle">
+            <td>5</td>
+            <td><input type="text"></td>
+            <td><input type="text" class="center"></td>
+            <td><select name="type">
+                    <option value="Choose" disabled>Choose a Category</option>
+                    <option value="Business">Business</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Technology">Technology</option>
+                </select></td>
+            <td><input type="number" name="unit price" id="book5_price" placeholder="0.00"></td>
+            <td><input type="number" name="Quantity" id="book5_quan" placeholder="0"></td>
+            <td><input type="number" name="total" id="book5_total" class="total" value="0.00" disabled></td>
+        </tr>
+        <tr id="footer">
+            <td colspan="5"><input type="submit" id="click" onclick="calculateTotal()"
+                    value="Calculated Grand Total Price" style="font-size: 18px;"></td>
+            <td colspan="2"><input type="number" name="total" class="total" id="grandtotal" value="0.00"
+                    style="width: 300px; height: 40px; font-weight: bolder; font-size: larger;"></td>
+        </tr>
+    </table>
+    <br />
+    <input type="button" id="button" class="btn" value="Discount 10%">
+    <br />
+    <br />
+    <a href="index.html">Go back to home</a>
+    <br />
+    <script src="book-order.js"></script>
+</body>
+
+</html>
