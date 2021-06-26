@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game in JavaScript</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function playGuessingGame(numToguess, totalGuesses = 10) {
+        userguess = prompt("Enter a number");
+        userguesses = 0;
+        // To count number of guesses by the user
+        userguesses += 1;
+        // to loop untill no guesses left
+        totalGuesses -= 1;
+        while (totalGuesses > 0) {
+            // If user click cancel button
+            if (userguess === null) {
+                return 0;
+            }
+            // If number guesses by the user is less than the number to guess
+            else if (userguess < numToguess) {
+                userguess = prompt(userguess + " is too small. Guess a larger number.");
+                // Decrement total guesses
+                totalGuesses -= 1;
+                // And increment user guesses
+                userguesses += 1;
+            }
+            // If number guesses by the user is greater than the number to guess
+            else if (userguess > numToguess) {
+                userguess = prompt(userguess + " is too large. Guess a smaller number");
+                totalGuesses -= 1;
+                userguesses += 1;
+            }
+            // If If user types an empty string or a string
+            else if (isNaN(userguess)) {
+                userguess = prompt("Please enter a number");
+            }
+            // If user guessed the number
+            else if (userguess == numToguess) {
+                alert("Congrats. You guessed the number in " + userguesses + " attempt");
+                return userguesses;
+            }
+        }
+
+        // if user does not guess the correct number before the number of
+        // guesses exceeds the total guesses
+        if (userguess != numToguess) {
+            alert("Sorry. You didn't guess the number");
+            return 0;
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess a number game</title>
+</head>
+
+<body>
+    <h1>Guess a Number Game using For Loop</h1>
+    <p>Enter number in prompt boguess.</p>
+</body>
+<script>
+    guess = prompt("Guess a number")
+    secretNumber = Math.floor((Math.random() * 100) + 1);
+    var attempts;
+    for (attempts = 0; guess != secretNumber; attempts++) {
+        if (guess > secretNumber)
+            guess = prompt("Your guess is too high. Guess a lower number")
+        else if (guess < secretNumber)
+            guess = prompt("Your guess is too low. Guess a higher number")
+    }
+    alert("Congratulations!\n" + secretNumber + " was the secret number.\n" + "You found it in " + attempts + " attempts");
+</script>
+
+</html>
