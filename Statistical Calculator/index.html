@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Statistical Calculator</title>
+    <style>
+        td:first-child {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Statistical Calculator</h1>
+    Enter Numbers: <textarea id="numbers" rows="3" cols="40" placeholder="Enter numbers separated by space"></textarea>
+    <br><br>
+    <button type="submit" onclick="calculate()">Calculate</button>
+    <input type="reset" value="Reset">
+    <br><br><br>
+    <table>
+        <tr>
+            <td>Min: </td>
+            <td><input type="text" id="min" disabled></td>
+        </tr>
+        <tr>
+            <td>Max: </td>
+            <td><input type="text" id="max" disabled></td>
+        </tr>
+        <tr>
+            <td>Sum: </td>
+            <td><input type="text" id="sum" disabled></td>
+        </tr>
+        <tr>
+            <td>Mean: </td>
+            <td><input type="text" id="mean" disabled></td>
+        </tr>
+        <tr>
+            <td>Median: </td>
+            <td><input type="text" id="median" disabled></td>
+        </tr>
+        <tr>
+            <td>Mode: </td>
+            <td><input type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>Standard Deviation: </td>
+            <td><input type="text" disabled></td>
+        </tr>
+        <tr>
+            <td>Variance: </td>
+            <td><input type="text" disabled></td>
+        </tr>
+    </table>
+
+
+</body>
+<script>
+    function reset() {
+
+    }
+    function calculate() {
+        var str = document.getElementById("numbers").value;
+        var numbers = str.split(" ");
+        // Max function.
+        Array.prototype.max = function () {
+            return Math.max.apply(null, this);
+        };
+
+        // Min function.
+        Array.prototype.min = function () {
+            return Math.min.apply(null, this);
+        };
+
+        document.getElementById("min").value = numbers.min();
+        document.getElementById("max").value = numbers.max();
+
+        // calculating sum
+        var sum = 0;
+        for (var i = 0; i < numbers.length; i++) {
+            sum += parseInt(numbers[i]);
+        }
+        document.getElementById("sum").value = sum;
+
+        document.getElementById("mean").value = (sum / numbers.length).toFixed(2);
+
+        // Sorting numbers
+        numbers.sort(function (a, b) {
+            return a - b;
+        });
+        // Calculating median
+        var median;
+        if (numbers.length % 2 != 0) {
+            var median = parseInt(numbers[parseInt(numbers.length / 2)]);
+        }
+        else {
+            var median = (parseInt(numbers[numbers.length / 2]) + parseInt(numbers[(numbers.length / 2) - 1])) / 2;
+        }
+        document.getElementById("median").value = median.toFixed(2);
+
+    }
+</script>
+
+</html>
