@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Charity Form</title>
+</head>
+
+<body>
+    <h1>Pearson Charity: Donation Form</h1>
+    <p><em>Please complete the form. Mandatory fields are marked with a <span class="star">*</span></em></p>
+    <fieldset>
+        <legend><span class="firstletter">P</span>ERSONAL <span class="firstletter">I</span>NFORMATION <span
+                class="firstletter">D</span>ETAILS</legend>
+        <table>
+            <tr>
+                <td>Name<span class="star">*</span></td>
+                <td><input type="text" name="name" id="name" placeholder="For example: John Doe"></td>
+            </tr>
+            <tr>
+                <td>Phone<span class="star">*</span></td>
+                <td><input type="text" name="phone" id="phone" placeholder="For example: 012-345-6789"></td>
+            </tr>
+            <tr>
+                <td>Email<span class="star">*</span></td>
+                <td><input type="text" name="email" id="email" placeholder="For example: user@domain.com"></td>
+            </tr>
+            <tr>
+                <td>Gender<span class="star">*</span></td>
+                <td><select id="gender">
+                        <option value="notValid">Select an option</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Prefer not to say</option>
+                    </select></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><span class="firstletter">D</span>onation <span class="firstletter">D</span>etails</legend>
+        <table>
+            <tr>
+                <td>Amount<span class="star">*</span></td>
+                <td><input type="number" min="1" max="100" maxlength="4" name="amount" id="amount" placeholder="Any amount between R1 - R1000"></td>
+            </tr>
+            <tr>
+                <td>Fund<span class="star">*</span></td>
+                <td><select id="fund">
+                        <option value="notValid">Select an option</option>
+                        <option value="Building">Building</option>
+                        <option value="Accomodation">Accomodation</option>
+                        <option value="Food">Food</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <button type="submit" onclick="validate()">Donate</button>
+</body>
+<script src="script.js"></script>
+
+</html>

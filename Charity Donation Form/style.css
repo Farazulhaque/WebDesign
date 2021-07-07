@@ -1,0 +1,48 @@
+h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+p{
+    padding-top: 0;
+    margin-top: 0;
+}
+.star {
+    color: red;
+}
+
+fieldset {
+    width: 40%;
+}
+
+legend {
+    font-size: 0.8em;
+}
+
+.firstletter {
+    font-size: 1.4em;
+}
+
+tr td {
+    padding: 5px 20px;
+}
+
+td:nth-child(2) {
+    width: 75%;
+}
+
+input {
+    width: 100%;
+}
+
+select {
+    width: 103%;
+}
+
+button {
+    background-color: #085c74;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+}
