@@ -1,4 +1,51 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Statistical Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Statistical Calculator</h1>
+        <p>Enter numbers and click calculate</p>
+        <fieldset>
+            <legend>
+                Enter Numbers
+            </legend>
+            <label for="numbers">Numbers:</label>
+            <textarea id="numbers" rows="3" cols="40"
+                placeholder="Enter numbers separated by comma(1,2,3,4,5)"></textarea><br>
+            <div id="buttons">
+                <input type="submit" id="calculate" onclick="processEntries()" value="Calculate">
+                <input type="reset" id="clear" onclick="clearEntries()" value="Clear"><br>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Result</legend>
+            <label for="max">Max: </label>
+            <input type="text" id="max" disabled><br>
+            <label for="min">Min: </label>
+            <input type="text" id="min" disabled><br>
+            <label for="sum">Sum: </label>
+            <input type="text" id="sum" disabled><br>
+            <label for="mean">Mean: </label>
+            <input type="text" id="mean" disabled><br>
+            <label for="median">Median: </label>
+            <input type="text" id="median" disabled><br>
+        </fieldset>
+        <br><br>
+        <footer style="text-align: center;">&copy; 2020</footer>
+    </main>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -101,4 +148,4 @@
     }
 </script>
 
-</html>
+</html>  -->

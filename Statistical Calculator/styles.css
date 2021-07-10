@@ -1,0 +1,53 @@
+body {
+    margin-top: 40px !important;
+    font-family: Courier, "Courier New", monospace;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 850px;
+    border: 3px solid rgb(0, 65, 101);
+}
+
+h1 {
+    color: rgb(0, 65, 101);
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+main {
+    padding: 1em 2em;
+}
+
+label {
+    float: left;
+    width: 150px;
+    text-align: left;
+    color: rgb(0, 65, 101);
+    font-weight: bold;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+span {
+    color: rgb(0, 65, 101);
+}
+
+legend {
+    width: 100%;
+    background-color: rgb(0, 65, 101);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 7.1px;
+    font-weight: bold;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+#buttons {
+    padding-left: 150px;
+}
