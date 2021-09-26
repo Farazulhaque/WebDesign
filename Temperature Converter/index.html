@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    Enter a temperature: <input type="number" id="temp" /><br />
+    <br><input type="text" name="result" id="result" disabled />
+    <br><br>
+    <button onclick="toF()">Convert to Fahrenheit</button>
+    <button onclick="toC()">Convert to Celsius</button>
+</body>
+<script>
+    function toF() {
+        var temp = document.getElementById("temp").value;
+        var C = Number(temp);
+        var F = C * 9 / 5 + 32;
+        document.getElementById("result").value = F;
+    }
+
+    function toC() {
+        var temp = document.getElementById("temp").value;
+        var F = Number(temp);
+        var C = (F - 32) * 5 / 9;
+        document.getElementById("result").value = C;
+    }
+</script>
+
+</html>
