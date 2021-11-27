@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><span>C</span>ENTENNIAL <span>C</span>OLLEGE</h1>
+    <h2>Continuing Education Course/Instructor Evaluation</h2>
+    <p>Please read each statement carefully and consider each one individually. Use the <strong>computer card</strong>
+        to make your choice (use keyboard to fill in space). Give only <strong>one answer</strong> for each question.
+    </p>
+    <form>
+        <p>Course Name/Code: </p>
+        <input type="text" name="coursename" id="coursename"><br>
+        <br>
+        <p>Semester: </p>
+        <input type="radio" name="sem" id="fall"> Fall
+        <input type="radio" name="sem" id="winter"> Winter
+        <input type="radio" name="sem" id="spring"> Spring/Summer
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>Year: </p>
+        <input type="text" name="year" id="year">
+        <br><br>
+        <p>Instructor: </p>
+        <input type="text" name="instructor" id="instructor">
+        <br><br>
+        <h3><span>I</span>NSTRUCTOR</h3>
+        How would you rate the instructor's: <br>
+        1. <strong>Knowledge</strong> of subject?<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+        2. <strong>helpfulness</strong>?<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+        3. <strong>courtesy and respect</strong> for all students? <br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+        4. <strong>communication</strong> skills?<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+        5. overall <strong>performance</strong>?<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+
+        <h3><span>C</span>OURSE</h3>
+        6. How would you rate the <strong>course materials</strong>?<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+        7. How much did this course meet your <strong>expectations</strong>?<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+        8. How would you rate this course (<strong>overall</strong>)<br>
+        <input type="radio" name="knowledge" id="excellent"> Excellent &emsp; &emsp;
+        <input type="radio" name="knowledge" id="good"> Good &emsp; &emsp;
+        <input type="radio" name="knowledge" id="fair"> Fair &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsatisfied"> Not Satisfied
+        <br><br>
+
+        <h3><span>G</span>ENERAL <span>I</span>NFORMATION</h3>
+        9. Was the <strong>course outline</strong> reviewed/ explained at the beginning of the course? <br>
+        <input type="radio" name="knowledge" id="yes"> Yes &emsp; &emsp;
+        <input type="radio" name="knowledge" id="no"> No &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsure"> Not Sure &emsp; &emsp;
+        <br><br>
+        10. Would you <strong>recommend</strong> this course to a friend with the same interest? <br>
+        <input type="radio" name="knowledge" id="yes"> Yes &emsp; &emsp;
+        <input type="radio" name="knowledge" id="no"> No &emsp; &emsp;
+        <input type="radio" name="knowledge" id="notsure"> Not Sure &emsp; &emsp;
+        <br><br>
+
+        <h3><span>A</span>NY <span>O</span>THER <span>C</span>OMMENTS </h3>
+        11. What is the <strong>best</strong> thing about this course?
+        <textarea name="bestthing" id="bestthing" cols="30" rows="2"></textarea>
+        <br><br>
+        12. How could we <strong>improve</strong> this course?
+        <textarea name="bestthing" id="bestthing" cols="30" rows="2"></textarea>
+        <br><br>
+        13. Other:
+        <textarea name="bestthing" id="bestthing" cols="30" rows="4"></textarea>
+
+        <br><br><br>
+        <input type="button" value="Submit" onclick="buttonClicked()" id="btn">
+        <p id="message"></p>
+    </form>
+    <footer>Web <a href="#">www.yourwebsite.com</a> &emsp; Email: <a href="mailto:">yourmail@domain.com</a></footer>
+</body>
+<script>
+    function buttonClicked() {
+        document.getElementById("message").innerHTML = "Thank you! We pay attention to your feedback!";
+    }
+</script>
+
+</html>
