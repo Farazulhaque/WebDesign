@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(Workstation.jpg);
+    height: 100vh;
+    background-position: center;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #D16002;
+    font-size: 45px;
+    font-family: Agency FB;
+    padding-left: 40px;
+    float: left;
+    padding-top: 15px;
+
+}
+
+.menu {
+    width: 10px;
+    float: left;
+    height: 70px;
+    float: right;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 92px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #D16002;
+}
+
+.content {
+    top: 150px;
+    width: 150px;
+    height: auto;
+    margin-left: 50px;
+    color: #fff;
+    position: relative;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.contect .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Consolas';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.contect h1 {
+    font-family: 'Consolas';
+    font-size: 90px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.form {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #D16002;
+    font-size: 22px;
+
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+
+.form input {
+    width: 240px;
+    height: 25px;
+    background: transparent;
+    border-bottom: 1px solid #D16002;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: #D16002;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: D16002;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #D16002;
+
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
