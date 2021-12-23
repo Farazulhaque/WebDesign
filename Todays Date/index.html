@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    img {
+        width: 40%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+</style>
+
+<body>
+    <h1>These Our Time</h1>
+    <img src="watch.jpeg" alt="watch">
+    <br>
+    <button type="button" onclick="showDate()">See Today date</button>
+    <p id="pdate"></p>
+
+    <br>
+    <br>
+
+    <label for="num">Please click this to enter any number: </label>
+    <input type="text" name="num" id="num" placeholder="Enter a number" onblur="printnum()">
+    <p id="shownums"></p>
+</body>
+<script>
+    function showDate() {
+        const timeElapsed = Date.now();
+        const today = new Date(timeElapsed);
+        // console.log(today);
+        document.getElementById("pdate").innerHTML = today;
+    }
+
+    function printnum() {
+        var num = parseInt(document.getElementById("num").value);
+        var nums = "";
+        for (var i = 1; i <= num; i++) {
+            nums += i + "<br>";
+        }
+        document.getElementById("shownums").innerHTML = nums;
+    }
+</script>
+
+</html>
