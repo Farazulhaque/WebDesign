@@ -1,0 +1,209 @@
+body {
+	background-color: #FFFFFF;
+	font-family: calibri;
+	margin: 0px;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 85%;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+header {
+	background-color: #231860;
+	color: white;
+}
+
+#unordered-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+
+}
+
+#unordered-list li {
+	margin: 25px 10px 10px 10px;
+}
+
+#unordered-list li a {
+	background-color: #231860;
+	color: white;
+	border: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+.login {
+	background-color: #231860;
+	color: white;
+	padding: 3px 8px;
+	text-decoration: none;
+	border: 2px solid #fff;
+	margin-left: 8px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+.content {
+	padding-left: 180px;
+	padding-right: 180px;
+	padding-top: 50px;
+}
+
+.content div button {
+	background-color: #231860;
+	color: white;
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+
+
+.unordered-list {
+	color: #384EC3;
+	list-style: none;
+	display: flex;
+	justify-content: center
+}
+
+.unordered-list li {
+	margin: 5px 5px 0px 10px;
+}
+
+.unordered-list li a {
+	background-color: white;
+	color: #384EC3;
+	border: none;
+}
+
+hr {
+
+	height: 0px;
+	border: 10;
+	border-top: 3px solid #ccc;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+body div p {
+	font-size: 15px;
+	text-align: center;
+	background-color: #fff;
+	border: 2px #fff;
+	border-radius: 10px;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-bottom: 30px;
+	padding-top: 25px;
+	box-shadow: 0 0 10px #DCDCDC;
+}
+
+.vacancy {
+	background-color: #fff;
+	border: 2px #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 20px #DCDCDC;
+	margin-top: 35px;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.vacancy div {
+	width: 220px;
+	background-color: #fff;
+	border: 2px #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #DCDCDC;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.vacancy div h5 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 15px;
+}
+
+.vacancy div span {
+	margin-top: 0px;
+	font-size: 15px;
+	color: #B1B1B1
+}
+
+.vacancy div ul {
+	margin-top: 0px;
+	padding-left: 27px;
+	margin-top: 5px;
+	list-style-image: url('disc.png');
+	font-size: 15px;
+	color: #B1B1B1
+}
+
+.vacancy div ul li {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.vacancy div button {
+	width: 90%;
+	background-color: #fff;
+	color: #582A8D;
+	border: 2px solid #582A8D;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+a {
+	color: #fff;
+	padding-bottom: 4px;
+	position: relative;
+	text-decoration: none;
+}
+
+a:after {
+	content: "";
+	display: block;
+	height: 2px;
+	background: #fff;
+	width: 0px;
+}
+
+a:hover:after {
+	width: 100%;
+}
+
+.unordered-list li {
+	color: #35268A;
+	padding-bottom: 4px;
+	position: relative;
+	text-decoration: none;
+}
+
+.unordered-list li:after {
+	content: "";
+	display: block;
+	height: 4px;
+	background: #35268A;
+	width: 0px;
+}
+
+.unordered-list li:hover:after {
+	width: 100%;
+}
