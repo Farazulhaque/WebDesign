@@ -1,0 +1,31 @@
+h1,
+h2 {
+	text-align: center;
+}
+
+body {
+	width: 80%;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+}
+span {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 25px; /* or whatever width you want. */
+	max-width: 25px; /* or whatever width you want. */
+	display: inline-block;
+	cursor: pointer;
+	/* cursor: ; */
+}
+span:hover {
+	background-color: aquamarine;
+}
+#btn {
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	font-size: 1.2em;
+}
